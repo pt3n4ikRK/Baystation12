@@ -7,6 +7,6 @@
 
 # not_a_user - Admin
 Pt3n4ik - Host
-Lumduc - Head Admin
-Rozuzaken - Head Admin
-Enjern447 - Trial Admin
+Lumduc - HeadAdmin
+Rozuzaken - HeadAdmin
+Enjern447 - TrialAdmin
