@@ -1,0 +1,21 @@
+[Unit]
+After=network.target network-online.target
+Requires=network-online.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+User=ss13
+Group=ss13
+Restart=always
+RestartSec=5s
+LimitNOFILE=16384
+LimitNPROC=1024
+ProtectSystem=full
+PrivateTmp=true
+ReadWriteDirectories=/ss13/game/live
+WorkingDirectory=/ss13/game/live
+TimeoutStopSec=1s
+ExecStart=/usr/local/bin/DreamDaemon baystation12.dmb 8000 -trusted
